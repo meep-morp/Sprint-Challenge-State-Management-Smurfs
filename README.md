@@ -23,10 +23,15 @@ In this challenge, you are to build a Smurfs village utilizing context or Redux 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What problem does the context API help solve?
+        Without advanced state management, dealing with state is cumbersome because you have to keep all state in the parent and pass it down. This can get out of hand very quickly on large projects.
 - [ ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+        Actions are the arguments that reducers, the functions, take in, almost like instructions. Reducers read the instructions and act. The store is the state in reducers, it can be updated and acts just like state in vanilla react, it is global. 
 - [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
+        Application state uses a store to keep state seperate from the components, it scales very well. Component state uses a provider to keep state and deliver it to it's children, like props but less one-way, you don't have to pass it child to child. Small projects are peferct for Component state, however it has limits that redux fixes. Any large scale app should use Application state. 
 - [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+        Redux-Thunk allows promises to be fullfilled in reducers, async become possible. You can make axios requests or set-timeouts in them. 
 - [ ] What is your favorite state management system you've learned and this sprint? Please explain why!
+      My favorite system is definitely Redux, it scales amazingly and havinga seperate store for state is really great idea. Redux with hooks is easy to use, the only downside is all of the steps you have to go through if you only have a few pieces of state. I chose to use context in this sprint for that reason. That way I do not have to use redux-thunk for my axios requests and I can just grab them initally.
 
 ## Project Set Up
 
@@ -46,10 +51,10 @@ Follow these steps to set up your project:
 
 ## Minimum Viable Product
 
-- [ ] Plan and implement how you are going to manage your state for your application
-- [ ] You _must_ use either context or Redux as your state management system
-- [ ] Once you have planned out your state management system, fetch data from the smurf server and display the data it returns
-- [ ] Add a form to collect info for a new smurf, and make a POST request to the server to add a new smurf to your village
+- [ x ] Plan and implement how you are going to manage your state for your application
+- [ x ] You _must_ use either context or Redux as your state management system
+- [ x ] Once you have planned out your state management system, fetch data from the smurf server and display the data it returns
+- [ x ] Add a form to collect info for a new smurf, and make a POST request to the server to add a new smurf to your village
 
 ## API documentation
 
