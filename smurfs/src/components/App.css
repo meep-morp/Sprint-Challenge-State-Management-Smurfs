@@ -1,3 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+* {
+  color: white;
+  font-family: 'Sigmar One', cursive;
+  letter-spacing: 1px;;
+}
+
+body {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-image: url(https://i.pinimg.com/originals/89/46/67/894667b69c48ba04ceefda2118820e09.jpg);
+}
+
 .App {
   text-align: center;
+  text-shadow: 0px 0px 5px black;
+}
+
+.hidden {
+  display: none;
+}
+
+
+form {
+  width: 75%;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+form input {
+  margin: 5px;
+  height: 20px;
+  padding: 5px;
+  outline: none;
+  color: rgb(42, 107, 160);
+}
+
+.button {
+  background-color:#4eb3e7;
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: 100px;
+  border: white solid 2px;
+  text-shadow: none;
+  padding: 5px;
+  border-radius: 20px;;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  padding: 10px;
+  margin: 20px;
+  background-color:#69a9c8 ;
+  border: white solid 2px;
+  border-radius: 20px;;
+}
+
+.card h2 {
+  margin: 5px;
 }
